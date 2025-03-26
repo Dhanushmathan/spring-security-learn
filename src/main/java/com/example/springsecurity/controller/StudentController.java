@@ -35,7 +35,7 @@ public class StudentController {
         return (CsrfToken) request.getAttribute("_csrf");
     }
 
-    @PostMapping("/students")
+    @PostMapping("/admin/students")
     public void addStudent(@RequestBody Student student) {
         students.add(student);
     }

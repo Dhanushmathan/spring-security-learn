@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     UserService userService;
 
-    @PostMapping("/addUser")
+    @PostMapping("/admin/add-user")
     public void addUser(@RequestBody Users user) {
         userService.addUser(user);
     }

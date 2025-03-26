@@ -20,4 +20,9 @@ public class HelloController {
         return "Hey Dhanush What are you doing!!!";
     }
 
+    @GetMapping("/public/demo")
+    public String demo() {
+        return "Public Page Demo Code";
+    }
+
 }
